@@ -46,6 +46,6 @@ jobs:
           echo test, and deploy your project.
           curl --location --request POST 'https://api.github.com/repos/PrashantIG1/testrepo1/dispatches' \
           --header "Accept: application/vnd.github.v3+json" \
-          --header "Authorization: 'Bearer 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'" \
+          --header "Authorization: 'Bearer ${{ secrets.PAT_TOKEN }}'" \
           --header "Content-Type: application/json" \
           --data-raw '{"event_type": "sample_push1","client_payload": { "version": "1.2.3"} }'
