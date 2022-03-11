@@ -41,10 +41,10 @@ jobs:
           https://api.github.com/repos/PrashantIG1/testrepo1/dispatches
           
       - name: Run a multi-line script2
-        run: |
+        run: | 
           echo Add other actions to build,
           echo test, and deploy your project.
-          echo 'Bearer ${{ secrets.PAT_TOKEN }}'
+          echo 'Bearer ${{ secrets.PAT_TOKEN1 }}'
           curl --location --request POST 'https://api.github.com/repos/PrashantIG1/testrepo1/dispatches' \
           --header "Accept: application/vnd.github.v3+json" \
           --header "Authorization: 'Bearer ${{ secrets.PAT_TOKEN }}'" \
