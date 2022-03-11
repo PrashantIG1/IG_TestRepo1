@@ -49,4 +49,4 @@ jobs:
           --header 'Accept: application/vnd.github.v3+json' \
           --header 'Authorization: Bearer ${{ secrets.PAT_TOKEN1 }}' \
           --header 'Content-Type: application/json' \
-          --data-raw '{"event_type": "sample_push1","client_payload": { "version": "1.2.3"} }'
+          --data-raw '{"event_type": "sample_push","client_payload": { "version": "1.2.3"} }'
